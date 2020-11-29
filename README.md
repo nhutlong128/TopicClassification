@@ -46,7 +46,7 @@ containing virtual environment parts.
 2. A csv file containing the performances of all baseline model will be saved to report folder.
 # How to train a SVC model with specific parameters:
 0. Make sure the working directory has been set to main directory (cd TopicClassification)
-1. In CLI: python src/model/svc_train.py -c 0.4 -k rbf -d 3
+1. In CLI: python src/model/svc_train.py -c 0.4 -k rbf -d 3\
 -c: C, float, default = 1.0 Regularization parameter. The strength of the regularization is inversely proportional to C. Must be strictly positive. The penalty is a squared l2 penalty.\
 -k: kernel{‘linear’, ‘poly’, ‘rbf’, ‘sigmoid’, ‘precomputed’}, default=’rbf’. Specifies the kernel type to be used in the algorithm. It must be one of ‘linear’, ‘poly’, ‘rbf’, ‘sigmoid’ or a callable.\
 -d: degreeint, default=3 Degree of the polynomial kernel function (‘poly’). Ignored by all other kernels.\
