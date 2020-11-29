@@ -1,6 +1,6 @@
 # TopicClassification
 # What is Topic Classification?
-Input: A corpus.
+Input: A corpus.\
 Output: A topic of the above corpus. Now we are supporting Business, Entertainment, Politics, Sport, Tech topics.
 
 # How to get started:
