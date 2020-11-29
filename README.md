@@ -49,7 +49,7 @@ containing virtual environment parts.
 1. In CLI: python src/model/svc_train.py -c 0.4 -k rbf -d 3\
 -c: C, float, default = 1.0 Regularization parameter. The strength of the regularization is inversely proportional to C. Must be strictly positive. The penalty is a squared l2 penalty.\
 -k: kernel{‘linear’, ‘poly’, ‘rbf’, ‘sigmoid’, ‘precomputed’}, default=’rbf’. Specifies the kernel type to be used in the algorithm. It must be one of ‘linear’, ‘poly’, ‘rbf’, ‘sigmoid’ or a callable.\
--d: degreeint, default=3 Degree of the polynomial kernel function (‘poly’). Ignored by all other kernels.\
+-d: degreeint, default=3 Degree of the polynomial kernel function (‘poly’). Ignored by all other kernels.
 2. If there is no argument passed, a default value will be applied.
 3. After the model has been trained. It will be save to model folder.
 # How to predict a topic of raw corpus text files with a trained SVC model:
