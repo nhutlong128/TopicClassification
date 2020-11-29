@@ -9,8 +9,8 @@ git clone https://github.com/nhutlong128/TopicClassification.git
 or download this project as zip.
 2. Change the working directory to TopicClassification using cd 
 3. Create a virtual Python Environment: python -m venv venv_folder
-4. Activate the above virtual Environment:
-Window: venv_folder\Scripts\Activate.bat
+4. Activate the above virtual Environment:\
+Window: venv_folder\Scripts\Activate.bat\
 Linux: source venv_folder/Scripts/Activate
 5. Install all the requirements library, package by using pip: pip install -r requirements.txt
 6. Run setup.py to install necessary nltk packages: python setup.py
