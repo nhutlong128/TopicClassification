@@ -1,4 +1,6 @@
 import nltk
 
-nltk.download('wordnet')
-nltk.download('stopwords')
+
+if __name__ == '__main__':
+    nltk.download('wordnet')
+    nltk.download('stopwords')
