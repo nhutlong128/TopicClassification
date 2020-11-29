@@ -1,6 +1,7 @@
 from pathlib import Path
 import pandas as pd
 import numpy as np
+import pickle
 from sklearn.feature_extraction.text import TfidfVectorizer
 from nltk.corpus import stopwords
 
@@ -12,12 +13,15 @@ def get_features(documents):
     df = pd.DataFrame(df)
     df.columns = feature_names
     df = pd.concat([df, documents['Category']], axis = 1)
-    return df
+    return df, tfidfconverter
 
 
 if __name__ == '__main__':
     path = Path(__file__).parent / "../../data/processed/processed.csv"
     documents = pd.read_csv(path)
-    df = get_features(documents)
+    df, tfidf = get_features(documents)
     features_path = Path(__file__).parent / "../../data/features/tfidf_features.csv"
     df.to_csv(path_or_buf = features_path)
+    tfidf_path = Path(__file__).parent / "../../data/features/tfidf.pickle"
+    pickle.dump(tfidf, open(tfidf_path, "wb"))
+    print('TFIDF Vectorizer saved')
