@@ -53,3 +53,8 @@ containing virtual environment parts.
 2. If there is no argument passed, a default value will be applied.
 3. After the model has been trained. It will be save to model folder.
 # How to predict a topic of raw corpus text files with a trained SVC model:
+0. Make sure the working directory has been set to main directory (cd TopicClassification)
+1. Make sure ran the script src/model/svc_train.py before to get a trained SVC model.
+2. Place all the raw corpus txt files need to be classified into txt_files folder
+3. In CLI: python src/model/svc_predict.py -d txt_files
+-d: folder name containing text files need to be classified.
