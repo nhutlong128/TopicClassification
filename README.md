@@ -21,11 +21,11 @@ Linux: source venv_folder/Scripts/Activate
  - data/processed: Store a csv file having two columns 'Content' and 'Category'. Content column contains all the corpus has been preprocessed, Category columns contains these label, topic of these corpus.
  - data/features: Store a csv file which is a feature table exported from TF_IDF.
 
-2.model: 
-containing the model has been trained (fit to the training set of the dataset) which also has the best performance (f1_score). Till now, it's is SVC (Support Vector Machine)
+2.model:
+- containing the model has been trained (fit to the training set of the dataset) which also has the best performance (f1_score). Till now, it's is SVC (Support Vector Machine)
 
 3.report:
-containing a csv file having performance of all baseline classifier models. Baseline meaning using the default parameter of these.
+- containing a csv file having performance of all baseline classifier models. Baseline meaning using the default parameter of these.
 
 4.src: 
 containing scripts.
