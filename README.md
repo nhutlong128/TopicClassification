@@ -7,13 +7,14 @@ Output: A topic of the above corpus. Now we are supporting Business, Entertainme
 1. Clone this project: 
 git clone https://github.com/nhutlong128/TopicClassification.git
 or download this project as zip.
-2. Change the working directory to TopicClassification using cd 
-3. Create a virtual Python Environment: python -m venv venv_folder
-4. Activate the above virtual Environment:\
+2. Change the working directory to TopicClassification using cd
+3. Make sure python 3.8.x is installed in your computer
+4. Create a virtual Python Environment: python -m venv venv_folder
+5. Activate the above virtual Environment:\
 Window: venv_folder\Scripts\Activate.bat\
 Linux: source venv_folder/Scripts/Activate
-5. Install all the requirements library, package by using pip: pip install -r requirements.txt
-6. Run setup.py to install necessary nltk packages: python setup.py
+6. Install all the requirements library, package by using pip: pip install -r requirements.txt
+7. Run setup.py to install necessary nltk packages: python setup.py
 
 # Folder Structure:
 1. data:
