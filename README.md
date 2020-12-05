@@ -39,7 +39,10 @@ containing virtual environment parts.
 # How to get a feature table before training:
 0. Make sure the working directory has been set to main directory (cd TopicClassification)
 1. The Feature Extraction script will take a processed corpus csv file in data/processed as input.
-2. In CLI: python src/data/TFIDF_feature_extraction.py
+2. In CLI: python src/data/TFIDF_feature_extraction.py -f 300 -i 5 -a 0.7\
+-f: Build a vocabulary that only consider the top max_features ordered by term frequency across the corpus.\
+-i: Building the vocabulary ignore terms that have a document frequency strictly lower than the given threshold. This value is also called cut-off in the literature. If float in range of [0.0, 1.0], the parameter represents a proportion of documents, integer absolute counts.\
+-a: Building the vocabulary ignore terms that have a document frequency strictly higher than the given threshold (corpus-specific stop words). If float in range [0.0, 1.0], the parameter represents a proportion of documents, integer absolute counts.\
 3. A csv file containing feature table will be saved to data/features folder.
 # How to get the report of performance of baseline models:
 0. Make sure the working directory has been set to main directory (cd TopicClassification)
